@@ -3,25 +3,25 @@
 #include <utility>
 #include <string>
 #include <vector>
+#include <algorithm>
+
+#define MAX  100000
 
 #include "Punto.h"
 
 using namespace std;
 
-class Figuras
+class Rendimiento
 {
 private:
 	vector<pair<string, float>> vec;
 	float areaTotal;
 
 public:
-	Figuras() {
-		vec.reserve(10); // reservamos un máximo de 10
-		areaTotal = 0;
-	};
+	Rendimiento() {vec.reserve(MAX);areaTotal = 0;};
 	float GetAreaTotal(vector<pair<string, float>> vecFiguras);
 	vector<pair<string, float>> getVecPares() { return vec; }
 	void setVecPares(string, float);
 
-	~Figuras() {};
+	~Rendimiento() {};
 };

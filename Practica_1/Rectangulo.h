@@ -5,25 +5,27 @@
 
 #include <cmath>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
 
-class Rectangulo : virtual public IFigura, public Punto
+class Rectangulo : virtual public IFigura
 {
 protected:
 	Punto punto1;
 	Punto punto3;
-	Punto punto2;
-	Punto punto4;
 
+	float areaRect;
 	vector<float> puntosRectangulo;
 
 public:
 	Rectangulo(Punto punto1, Punto punto3);
-	float GetArea();
-	vector<float> InfoFigura();
+	void GetArea();
+	void InfoFigura();
 	
+	float GetAreaVariable() { return areaRect; }
+
 	~Rectangulo() {};
 
 };

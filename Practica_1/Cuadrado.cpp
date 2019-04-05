@@ -1,12 +1,12 @@
 #include "Cuadrado.h"
 
-Cuadrado::Cuadrado(Punto punto1, Punto punto3) : Rectangulo(punto1, punto3)
+void Cuadrado::GetArea()
 {
-	
+	float longX = fabs(punto1.x - punto3.x);
+	float longY = fabs(punto1.y - punto3.y);
+	areaRect = longX * longY;
+	cout << "El area del CUADRADO es = " << areaRect << "\n";
 }
 
-Cuadrado::~Cuadrado()
-{
-}
 
 

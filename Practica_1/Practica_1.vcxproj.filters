@@ -30,17 +30,17 @@
     <ClInclude Include="Cuadrado.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="ColeccionFiguras.h">
+    <ClInclude Include="Figuras.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Figuras.h">
+    <ClInclude Include="Rendimiento.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomFigures.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="IFigura.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="Rectangulo.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
@@ -50,16 +50,16 @@
     <ClCompile Include="main.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Punto.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="Cuadrado.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="ColeccionFiguras.cpp">
+    <ClCompile Include="Figuras.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Figuras.cpp">
+    <ClCompile Include="Rendimiento.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomFigures.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>

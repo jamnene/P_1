@@ -1,11 +1,5 @@
 #include "Figuras.h"
 
-Figuras::Figuras()
-{
-	vec.reserve(10);
-	areaTotal = 0;
-}
-
 float Figuras::GetAreaTotal(vector<pair<string, float>> vecFiguras)
 {
 	for (auto it = vecFiguras.begin(); it != vecFiguras.end(); it++)

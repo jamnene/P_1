@@ -8,18 +8,14 @@
 #include <vector>
 #include <iostream>
 
-class Cuadrado : public Rectangulo//, public virtual IFigura
+class Cuadrado : public Rectangulo
 {
 protected:
-	/*Punto punto1;
-	Punto punto3;
-	Punto punto2;
-	Punto punto4;*/
-
-	//vector<float> puntosCuadrado;
+	
 
 public:
-	Cuadrado(Punto punto1, Punto punto3);
-	//PREGUNTAR A LA PROFE SI TIENEN QUE DEFINIRSE AQUI LOS METODOS GETAREA() E INFOFIGURA() ????????????????
-	~Cuadrado();
+	Cuadrado(Punto punto1, Punto punto3) : Rectangulo(punto1, punto3) {};
+	
+	void GetArea() override;
+	~Cuadrado() {};
 };

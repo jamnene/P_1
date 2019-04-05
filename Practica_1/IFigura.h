@@ -5,12 +5,12 @@
 
 using namespace std;
 
-class IFigura : public Punto
+class IFigura
 {
 
 public:
-	virtual float GetArea() = 0;
-	virtual vector<float> InfoFigura() = 0;
+	virtual void GetArea() = 0;
+	virtual void InfoFigura() = 0;
 
 
 	virtual ~IFigura() {};

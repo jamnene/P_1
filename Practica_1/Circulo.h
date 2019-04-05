@@ -7,21 +7,25 @@
 
 #include <cmath>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
-class Circulo : virtual public IFigura, public Punto
+class Circulo : virtual public IFigura
 {
 protected:
 	Punto centro;
 	float radio;
 
+	float areaCirc;
 	vector<float> puntosCirculo;
 
 public:
 	Circulo(Punto centro, float radio);
-	float GetArea();
-	vector<float> InfoFigura();
+	void GetArea();
+	void InfoFigura();
+
+	float GetAreaVariable() { return areaCirc; };
 
 	~Circulo() {};
 
