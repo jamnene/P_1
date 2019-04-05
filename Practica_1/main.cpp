@@ -3,6 +3,7 @@
 #include <algorithm>  // for_each es parte de algorithm
 #include <ctime>
 #define MAX  100000
+//segunda subida ////////////////
 
 
 #include "Rectangulo.h"
